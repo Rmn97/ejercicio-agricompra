@@ -1,0 +1,84 @@
+$fColor: #ffffff;
+$sColor: #d6e3e8;
+$aColor:#b6c5d2;
+$cColor: #8e9ea6;
+
+$font-stack: 'Hind Siliguri', sans-serif;
+$font-family: 'Open Sans', sans-serif;
+
+header{
+    border-top: 1px solid $aColor;
+    border-bottom: 1px solid $aColor;
+    display: flex;
+    flex-direction: row;
+    /*position: fixed;*/
+    height: 65px;
+    background-color: $fColor;
+    font-family: $font-family;
+}
+
+img{
+    width: 260px;
+    height: 56px;
+    background: none;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+app-menu-lat{
+    display: flex;
+    flex: 1;
+}
+.cabecera{
+    display: flex;
+    flex-direction: row;
+
+   
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.celda{
+
+    padding: 4px 10px;
+    display: flex;
+    flex: 1;
+}
+.celda-input{
+    flex:3;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+  }
+
+.input-container{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+
+    height: 39px;
+    border: none;
+ 
+    border-radius:32px;
+    overflow: hidden;
+    background-color: $aColor;
+    color: $cColor;
+
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius:32px;
+    border: none;
+    overflow: hidden;
+    background-color: $aColor;
+    color: $cColor;
+  }
+  

@@ -1,0 +1,25 @@
+$mainColor: #ffffff;
+$bColor: #6fd5ab;
+$aColor:#b6c5d2;
+$lColor: #8e9aa6;
+
+div{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $aColor;
+    padding-left: 15px;
+    height: 100vh;
+    width: 100%;
+    span{
+        margin-top: 15px;
+        color: $lColor;
+    }
+
+    span:hover{
+        color: $bColor;
+    }
+
+    span i{
+        padding-right: 5px;
+    }
+}
