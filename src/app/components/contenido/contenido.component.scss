@@ -7,16 +7,6 @@ $pageFColor: #667679;
 $pageLColor: #a8c2bb;
 $flechaColor: #bfd0d8;
 
-button{
-    background-color: $cBoton;
-    color: $mainColor;
-    border: none;
-    border-radius: 30px;
-    /*width: 171px;
-    height: 38px;*/
-    font-size: 1em;
-    /*margin-left: 992px;*/
-}
 
 .content{
     
@@ -62,6 +52,48 @@ button{
 .contenidoTop{
     margin-left: 35px;
     margin-top: 15px;
+
+    .project{
+        display: flex;
+        border: 1px solid black;
+        justify-content: space-between;
+        align-items: baseline;
+        div{
+            border: 1px solid red;
+            /*flex: 1;*/
+            button{
+                background-color: $cBoton;
+                color: $mainColor;
+                border: none;
+                border-radius: 30px;
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+        }
+    }
+    .input-container{
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        width: 1165px;
+        height: 49px;
+        border: none;
+        border-radius:32px;
+        overflow: hidden;
+        background-color: $backColor;
+        color: $letraColor;
+        margin-top: 15px;
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border-radius:32px;
+            border: none;
+            overflow: hidden;
+            background-color: $backColor;
+            color: $letraColor;
+        }
+    }
     .navFle{
         display: flex;
         /*border: 1px solid blue;*/
@@ -86,30 +118,6 @@ button{
     }
 }
 
-
-.input-container{
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    width: 1165px;
-    height: 49px;
-    border: none;
-    border-radius:32px;
-    overflow: hidden;
-    background-color: $backColor;
-    color: $letraColor;
-    margin-top: 15px;
-}
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border-radius:32px;
-    border: none;
-    overflow: hidden;
-    background-color: $backColor;
-    color: $letraColor;
-}
 
 .letraG{
     font-size: 2em;
