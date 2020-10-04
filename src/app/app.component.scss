@@ -2,13 +2,14 @@ $fColor: #ffffff;
 $sColor: #d6e3e8;
 $aColor:#b6c5d2;
 $cColor: #8e9ea6;
+$borde: #eaeaea;
 
 $font-stack: 'Hind Siliguri', sans-serif;
 $font-family: 'Open Sans', sans-serif;
 
 header{
-    border-top: 1px solid $aColor;
-    border-bottom: 1px solid $aColor;
+    border-top: 2px solid $borde;
+    border-bottom: 2px solid $borde;
     display: flex;
     flex-direction: row;
     /*position: fixed;*/
@@ -18,8 +19,8 @@ header{
 }
 
 img{
-    width: 260px;
-    height: 56px;
+
+    height: 46px;
     background: none;
 }
 
@@ -29,13 +30,19 @@ section{
 }
 app-menu-lat{
     display: flex;
-    flex: 1;
+    /*flex: 1;*/
+    border-right: 2px solid $borde;
 }
+app-contenido{
+    display: flex;
+    flex: 2;
+}
+
 .cabecera{
     display: flex;
     flex-direction: row;
 
-   
+
     justify-content: space-around;
     width: 100%;
     align-items: center;

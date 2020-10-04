@@ -2,16 +2,21 @@ $cBoton: #00bb68;
 $backColor: #d6e3e8;
 $mainColor: #ffffff;
 $letraColor: #63757f;
-$bordeColor:#b6c5d2;
+$bordeColor:#eaeaea;
 $pageFColor: #667679;
 $pageLColor: #a8c2bb;
 $flechaColor: #bfd0d8;
+$cabecera: #62737d;
+$monto: #889aa6;
+
+$actualpage: #627381;
+$previouspage: #799097;
 
 
 .content{
     
     background-color: $backColor;
-    padding: 4px 20px;
+    padding: 4px 32px;
 
     .renglon{
         display: flex;
@@ -36,6 +41,7 @@ $flechaColor: #bfd0d8;
     .cabecera{
         justify-content: space-around;
         padding: 4px 10px;
+        color: $cabecera;
     }
     .contenido{
         background-color: $mainColor;
@@ -46,28 +52,43 @@ $flechaColor: #bfd0d8;
         justify-content: space-around;
         padding: 4px 10px;
         margin-bottom: 16px;
+        color: #627683;
     }
 }
 
 .contenidoTop{
     margin-left: 35px;
     margin-top: 15px;
-
+    .titular{
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        p{
+            padding: 2px;
+        }
+        .previous{
+            color: $previouspage;
+        }
+        .actual{
+            color: $actualpage;
+        }
+    }
     .project{
         display: flex;
-        border: 1px solid black;
+
         justify-content: space-between;
         align-items: baseline;
         div{
-            border: 1px solid red;
-            /*flex: 1;*/
+            p{
+                margin: 0;
+            }
             button{
                 background-color: $cBoton;
                 color: $mainColor;
                 border: none;
                 border-radius: 30px;
                 padding: 8px 16px;
-                font-size: 1em;
+                font-size: 1.1em;
             }
         }
     }
@@ -120,7 +141,8 @@ $flechaColor: #bfd0d8;
 
 
 .letraG{
-    font-size: 2em;
+    font-size: 1.7em;
+    color: #3c474c;
 }
 
 .letraS{
@@ -175,13 +197,23 @@ $flechaColor: #bfd0d8;
     color: transparent;
 }
 
+.cantidad{
+    color: $cabecera;
+}
+
 .celda-monto{
     padding: 4px 10px;
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: flex-start;
+    color: $monto;
     p{
         margin: 0;
     }
 }
+
+.nito{
+    font-weight: bold;
+}
+
