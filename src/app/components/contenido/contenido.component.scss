@@ -9,6 +9,9 @@ $flechaColor: #bfd0d8;
 $cabecera: #62737d;
 $monto: #889aa6;
 
+$invertido: #fd6f4c;
+$restante: #fee6cd;
+
 $actualpage: #627381;
 $previouspage: #799097;
 
@@ -35,6 +38,53 @@ $previouspage: #799097;
             flex: 2;
             padding: 4px 10px;
             align-items: flex-start;
+
+            .barra-contenido{
+                display: flex;
+                justify-content: space-between;
+            }
+           
+            .barra-completado{
+                background-color: $cBoton;
+                color: $mainColor;
+                border-radius: 15px;
+                width: 100%;
+                height: 30%;
+                padding-bottom: 4px;
+                padding-top: 4px;
+            }
+            .barra-progreso{
+                background-color: $backColor;
+                border-radius: 15px;
+                width: 100%;
+                height: 30%;
+                padding-bottom: 4px;
+                padding-top: 4px;
+            }
+            .barra-restante{
+                background-color: $restante;
+                width: 100%;
+                height: 30%;
+                border-radius: 15px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                /*padding-bottom: 4px;
+                padding-top: 4px;*/
+               
+            }
+            .barra-invertido{
+                background-color: $invertido;
+                color: white;
+                border-radius: 15px;
+                width: 60%;
+                height: 30%;
+                padding-bottom: 4px;
+                padding-top: 4px;
+                display: flex;
+                justify-content: flex-start;
+            }
+            
         }
         
     }
@@ -165,23 +215,14 @@ $previouspage: #799097;
     padding-top: 4px;
 }
 
+.icon-pro{
+    padding-right: 16px;
+    padding-top: 8px;
+}
+
 .porcentaje{
     padding-left: 10px;
     margin: 0;
-}
-
-.barra-progreso{
-    background-color: $backColor;
-    border-radius: 15px;
-    width: 100%;
-    height: 30%;
-    padding-bottom: 4px;
-    padding-top: 4px;
-}
-
-.barra-contenido{
-    display: flex;
-    justify-content: space-between;
 }
 
 .cont-page{
@@ -217,3 +258,10 @@ $previouspage: #799097;
     font-weight: bold;
 }
 
+.invertido{
+    color: $invertido;
+}
+
+.completado{
+    color: $cBoton;
+}
