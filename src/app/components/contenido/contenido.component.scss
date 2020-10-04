@@ -57,8 +57,7 @@ $previouspage: #799097;
 }
 
 .contenidoTop{
-    margin-left: 35px;
-    margin-top: 15px;
+    padding: 4px 28px;
     .titular{
         display: flex;
         flex-flow: row;
@@ -95,14 +94,14 @@ $previouspage: #799097;
     .input-container{
         display: -ms-flexbox; /* IE10 */
         display: flex;
-        width: 1165px;
+
         height: 49px;
         border: none;
         border-radius:32px;
         overflow: hidden;
         background-color: $backColor;
         color: $letraColor;
-        margin-top: 15px;
+        margin-top: 20px;
 
         .input-field {
             width: 100%;
