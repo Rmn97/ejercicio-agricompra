@@ -51,13 +51,14 @@ $previouspage: #799097;
         text-align: center;
         justify-content: space-around;
         padding: 4px 10px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         color: #627683;
     }
 }
 
 .contenidoTop{
     padding: 4px 28px;
+    
     .titular{
         display: flex;
         flex-flow: row;
@@ -94,8 +95,8 @@ $previouspage: #799097;
     .input-container{
         display: -ms-flexbox; /* IE10 */
         display: flex;
-
-        height: 49px;
+        
+        height: 48px;
         border: none;
         border-radius:32px;
         overflow: hidden;
